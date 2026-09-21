@@ -116,7 +116,7 @@
     <!-- Background Video Element with Gradient Overlay -->
     <div class="fixed inset-0 z-0 overflow-hidden pointer-events-none">
         <video id="bgVideo" autoplay loop muted playsinline class="w-full h-full object-cover transition-opacity duration-1000 opacity-60">
-            <source src="https://assets.mixkit.co/videos/preview/mixkit-stars-in-the-night-sky-1610-large.mp4" type="video/mp4">
+            <source src="video.mp4" type="video/mp4">
         </video>
         <div id="fallbackBg" class="absolute inset-0 animated-bg opacity-0 transition-opacity duration-1000"></div>
         <div class="absolute inset-0 bg-gradient-to-b from-slate-950/80 via-slate-900/60 to-slate-950/90"></div>
@@ -127,12 +127,12 @@
         <div class="glass-panel rounded-2xl px-6 py-3 flex items-center justify-between shadow-2xl">
             <!-- Logo & Title -->
             <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-xl bg-brand-green flex items-center justify-center font-game text-2xl font-bold shadow-lg shadow-brand-green/30">
-                    🦜
+                <div class="w-10 h-10 rounded-xl bg-brand-black flex items-center justify-center font-game text-2xl font-bold shadow-lg shadow-brand-blue/30">
+                 🐺
                 </div>
                 <div>
                     <h1 class="font-game text-xl tracking-wide text-white flex items-center gap-2">
-                        QuestionApps
+                        Question
                         <span class="text-xs bg-brand-green/20 text-brand-green px-2 py-0.5 rounded-full font-sans border border-brand-green/30">ID ➔ EN</span>
                     </h1>
                 </div>
@@ -210,12 +210,11 @@
                             Ayo Semangat! 🚀
                         </div>
                         <!-- Mascot Graphic -->
-                        <div id="avatarGraphic" class="w-32 h-32 sm:w-40 sm:h-40 rounded-full bg-slate-800/80 border-4 border-brand-green/40 flex items-center justify-center text-6xl sm:text-7xl shadow-2xl transition-all duration-300">
-                            🦜
+                        <div id="avatarGraphic" class="w-32 h-32 sm:w-40 sm:h-40 rounded-full bg-slate-800/80 border-4 border-brand-black/40 flex items-center justify-center text-6xl sm:text-7xl shadow-2xl transition-all duration-300">                            💻
                         </div>
                     </div>
                     <div class="mt-3 text-center">
-                        <span id="mascotName" class="font-game text-slate-300 text-sm">Kiki si Burung Pintar</span>
+                        <span id="mascotName" class="font-game text-slate-300 text-sm">Wolf Scientic</span>
                     </div>
                 </div>
 
@@ -247,7 +246,7 @@
             <!-- Footer Answer Action Panel -->
             <div id="actionFooter" class="glass-panel rounded-2xl p-4 sm:p-6 flex items-center justify-between transition-colors duration-300">
                 <div id="feedbackMessage" class="flex items-center gap-3 hidden">
-                    <div id="feedbackIcon" class="w-10 h-10 rounded-full flex items-center justify-center text-xl font-bold"></div>
+                    <div id="feedbackIcon" class="w-10 h-10 rounded-full flex items-center justify-center text-xl font-bold">💻</div>
                     <div>
                         <h4 id="feedbackTitle" class="font-bold text-lg"></h4>
                         <p id="feedbackDetail" class="text-sm opacity-90"></p>
@@ -552,7 +551,7 @@
             elements.topicsContainer.innerHTML = '';
             const topic = TOPICS[0]; // Single topic
             const card = document.createElement('div');
-            card.className = `glass-card rounded-3xl p-6 flex flex-col justify-between hover:border-brand-green/50 transition-all cursor-pointer transform hover:-translate-y-1 shadow-2xl group border-2 border-brand-green/30`;
+            card.className = `glass-card rounded-3xl p-6 flex flex-col justify-between hover:border-brand-blue/50 transition-all cursor-pointer transform hover:-translate-y-1 shadow-2xl group border-2 border-brand-blue/30`;
             card.innerHTML = `
                 <div class="flex items-center gap-5">
                     <div class="w-20 h-20 rounded-2xl bg-gradient-to-tr ${topic.color} flex items-center justify-center text-4xl shadow-lg group-hover:scale-110 transition-transform flex-shrink-0">
@@ -751,7 +750,7 @@
                 elements.avatarGraphic.classList.add('avatar-shake');
                 elements.avatarGraphic.style.borderColor = '#ff4b4b';
             } else {
-                elements.avatarGraphic.textContent = '🦜';
+                elements.avatarGraphic.textContent = '🐺';
                 elements.avatarGraphic.style.borderColor = 'rgba(88, 204, 2, 0.4)';
             }
 
